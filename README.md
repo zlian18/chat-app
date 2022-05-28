@@ -2,4 +2,4 @@
 
 Online chatting website that allow group and direct chats.
 
-URL: https://westlaketoowoomba.com/
+URL: https://chat-app-db4271.netlify.app/
