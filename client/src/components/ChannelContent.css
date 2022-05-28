@@ -1,0 +1,53 @@
+.chat-content-container {
+  width: 100%;
+  display: flex;
+}
+
+.channel-header-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.channel-header-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.more-info {
+  background-color: rgb(185, 180, 180);
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.more-info p {
+  color: white;
+  display: flex;
+  padding-top: 2.5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.users-header-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  white-space: nowrap;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.user-header-multi {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.user-header-name {
+  font-size: 14px;
+  font-weight: bold;
+}

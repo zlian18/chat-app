@@ -1,0 +1,32 @@
+.channel-type-container,
+.error-loading-text {
+  color: white;
+}
+
+.channel-type {
+  color: #dce1ded2;
+}
+
+.channel-type-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.add-chat {
+  background-color: white;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.add-chat p {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}

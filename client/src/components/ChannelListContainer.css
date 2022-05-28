@@ -1,0 +1,44 @@
+
+
+.channel-list-wrapper {
+  height: 100vh;
+  background: #7400b8;
+  width: 15vw;
+  min-width: 250px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+.chat-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-container {
+  width: 30px;
+  height: 30px;
+  background:#ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.server-name {
+  color: #ffffff;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chat-header-bot-hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+

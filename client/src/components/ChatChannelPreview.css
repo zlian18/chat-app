@@ -1,0 +1,25 @@
+.preview-wrapper {
+  color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.preview-wrapper-selected {
+  color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.channel-list-messages {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}

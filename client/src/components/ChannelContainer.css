@@ -1,0 +1,19 @@
+.chat-content-container-wrapper  {
+  width: 100%;
+  height: 100vh;
+  padding: 0 2em;
+}
+
+.empty-channel-message {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.empty-channel-message p {
+  font-weight: bold;
+}
