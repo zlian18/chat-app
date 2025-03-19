@@ -27,11 +27,14 @@ const CreateChannel = ({ createType, setCreating }) => {
   const { client, setActiveChannel } = useChatContext();
   const [channelName, setChannelName] = useState("");
   const [addedUsers, setAddedUsers] = useState([client.userID || ""]);
+  const [errorMessage, setErrorMessage] = useState(""); 
 
   const createChannel = async () => {
-        if (createType === 'team' && !channelName) {
-      return console.log('empty channel name')
+    if (createType === 'team' && !channelName) {
+        setErrorMessage("Channel name is required.");
+        return;
     }
+  
     try {
       const newChannel = await client.channel(createType, channelName, {
         name: channelName,
@@ -45,7 +48,7 @@ const CreateChannel = ({ createType, setCreating }) => {
       setAddedUsers([client.userID]);
       setActiveChannel(newChannel);
     } catch (error) {
-      console.log(error);
+      setErrorMessage(error);
     }
   };
 
@@ -62,6 +65,10 @@ const CreateChannel = ({ createType, setCreating }) => {
           setChannelName={setChannelName}
         />
       )}
+
+      {/* Display error message */}
+      {errorMessage && <p style={{ color: "red", fontSize: "14px", marginBottom: "5px" }}>{errorMessage}</p>}
+
       <Users setAddedUsers={setAddedUsers} />
       <div>
         <button className="create-channel-button" onClick={createChannel}>

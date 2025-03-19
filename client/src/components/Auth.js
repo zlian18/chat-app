@@ -19,10 +19,9 @@ const Auth = () => {
 
   const formSubmitHandler = async (event) => {
     event.preventDefault();
-    // console.log(form);
     const { username, password, avatar } = form;
 
-    const URL = "https://projec-chats-app.herokuapp.com/auth";
+    const URL = "https://chat-app-tfkh.onrender.com";
 
     // const URL = "http://localhost:5000/auth";
 
