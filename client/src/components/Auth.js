@@ -21,7 +21,7 @@ const Auth = () => {
     event.preventDefault();
     const { username, password, avatar } = form;
 
-    const URL = "https://chat-app-tfkh.onrender.com";
+    const URL = "https://chat-app-tfkh.onrender.com/auth";
 
     // const URL = "http://localhost:5000/auth";
 
